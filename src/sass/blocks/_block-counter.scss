@@ -1,0 +1,26 @@
+.block-counter {
+	margin-top: 10rem;
+	&__list {
+		display: flex;
+		justify-content: space-around;
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+	&__value {
+		font-family: $title;
+		font-size: 5rem;
+		font-weight: 200;
+		color: $accent;
+		letter-spacing: .2rem;
+	}
+	&__text {
+		font-family: $title;
+		font-weight: 400;
+		font-size: 1.125rem;
+		color: $gray;
+		letter-spacing: .045rem;
+	}
+}
