@@ -1,0 +1,12 @@
+.author {
+	font-family: $text;
+	font-size: 1.125rem;
+	font-weight: 400;
+	color: $white;
+	line-height: 2.75rem;
+	letter-spacing: .05625rem;
+
+	&_dark {
+		color: #696980;
+	}
+}

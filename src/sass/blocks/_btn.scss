@@ -1,0 +1,11 @@
+.btn {
+	font-family: $title;
+	font-size: 1.125rem;
+	color: $white;
+	letter-spacing: .045rem;
+	box-shadow: 0 2px 0 rgba(101, 228, 125, 0.5);
+	border-radius: 3px;
+	background-color: #65e47d;
+	background-image: linear-gradient(to left, rgba(101, 228, 206, .7) 0%, rgba(101, 228, 161, .7) 100%);
+	padding: 1rem $gutter;
+}

@@ -11,15 +11,35 @@ block content
 				.book-hero
 					.book-hero__picture
 					.block-text
-						span - By Emma Anderson
-						h1.title Bukee: The Book
-						span A room without books is like a body without a soul
+						span.author - By Emma Anderson
+						h1.title.title_white.title_uppercase Bukee: The Book
+						span.subtitle A room without books is like a body without a soul
 
 						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 						p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
 
-						p laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-
 						a.btn(href="#" target="_blank") Buy this book - $15.00
 						small * Some conditions may applicable
+	section
+		.section.book-author
+			.container.book-author__container
+				.block-author
+					.block-text.block-text_dark
+						span.author.author_dark - Book Author
+						h1.title Emma Anderson
+						span.subtitle A room without books is like a body without a soul
+
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+						p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
+
+						a.btn(href="#" target="_blank") Read full biography
+						small * Some conditions may applicable
+					.block-avatar
+						svg.block-avatar__pattern(width="435" height="558")
+							linearGradient#gradient(gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="435" y2="558")
+								stop(offset="0" style="stop-color: #446a87")
+								stop(offset="1" style="stop-color: #59c2ae")
+							rect(width="435" height="558" x="0" y="0" fill="url(#gradient)")
+						img.block-avatar__img(src="img/author.jpg", alt="author")

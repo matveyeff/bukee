@@ -1,0 +1,8 @@
+.block-text {
+	color: $white;
+	flex-basis: 50%;
+
+	&_dark {
+		color: $dark;
+	}
+}

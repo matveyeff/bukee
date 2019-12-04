@@ -31,6 +31,15 @@ img, embed, object, video {
 	max-width: 100%;
 }
 
+p {
+	font-family: $text;
+	font-size: .9375rem;
+	font-weight: 400;
+	line-height: 1.5rem;
+	letter-spacing: .046875rem;
+	margin: $gutter 0;
+}
+
 a {
 	text-decoration: none;
 }
@@ -60,4 +69,34 @@ h6 {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 .9375rem;
+}
+
+.title {
+	font-family: $title;
+	font-weight: 700;
+	font-size: 3rem;
+	color: $dark;
+	line-height: 2.75rem;
+	letter-spacing: .12rem;
+	margin: $gutter 0;
+
+	&_uppercase {
+		text-transform: uppercase;
+	}
+
+	&_white {
+		color: $white;
+	}
+}
+
+.subtitle {
+	font-family: $title;
+	font-size: 1.125rem;
+	font-weight: 400;
+	color: $accent;
+	letter-spacing: .05625rem;
+}
+
+.section {
+	padding: 10rem 0;
 }
