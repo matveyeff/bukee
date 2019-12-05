@@ -7,6 +7,7 @@ const sassGlob 					= require('gulp-sass-glob');
 const groupMediaQueries = require('gulp-group-css-media-queries');
 const cleanCSS 					= require('gulp-clean-css');
 const autoprefixer 			= require('gulp-autoprefixer');
+const gulpStylelint 		= require('gulp-stylelint');
 
 const pug								=	require('gulp-pug');
 const prettify 					= require('gulp-html-prettify');
@@ -29,8 +30,21 @@ const paths =  {
   build: 'build/'      	// paths.build
 };
 
+function lint() {
+  return gulp.src(paths.src + 'sass/**/*.scss')
+    .pipe(gulpStylelint({
+      failAfterError: false,
+      reporters: [
+        {
+          formatter: 'string',
+          console: true
+        }
+      ]
+    }));
+}
+
 function styles() {
-	return gulp.src(paths.src + 'sass/main.scss')
+  return gulp.src(paths.src + 'sass/main.scss')
 		.pipe(plumber())
 		.pipe(sourcemaps.init())
 		.pipe(sassGlob())
@@ -99,6 +113,7 @@ function clean() {
 }
 
 function watch() {
+  gulp.watch(paths.src + 'sass/**/*.scss', lint);
   gulp.watch(paths.src + 'sass/**/*.scss', styles);
   gulp.watch(paths.src + 'views/**/*.pug', htmls);
   gulp.watch(paths.src + 'js/**/*.js', scripts);
@@ -117,6 +132,7 @@ function serve() {
   browserSync.watch(paths.build + '**/*.*', browserSync.reload);
 }
 
+exports.lint 					  = lint;
 exports.styles 					= styles;
 exports.scripts 				= scripts;
 exports.htmls 					= htmls;
@@ -129,6 +145,6 @@ exports.watch 					= watch;
 
 gulp.task('default', gulp.series(
   clean,
-  gulp.parallel(styles, svgSprite, scripts, htmls, images, favicon, fonts),
+  gulp.parallel(lint, styles, svgSprite, scripts, htmls, images, favicon, fonts),
   gulp.parallel(watch, serve)
 ));

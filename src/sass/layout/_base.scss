@@ -1,7 +1,7 @@
 * {
 	box-sizing: border-box;
-	margin: 0;
 	padding: 0;
+	margin: 0;
 }
 
 html {
@@ -16,28 +16,30 @@ html {
 	@include phones {
 		font-size: 13px;
 	}
-
 }
 
 body {
-	font-family: $text;
 	width: 100%;
 	min-height: 100%;
-	margin: 0;
 	padding: 0;
+	margin: 0;
+	font-family: $text;
 }
 
-img, embed, object, video {
+img,
+embed,
+object,
+video {
 	max-width: 100%;
 }
 
 p {
+	margin: $gutter 0;
 	font-family: $text;
 	font-size: .9375rem;
 	font-weight: 400;
 	line-height: 1.5rem;
 	letter-spacing: .046875rem;
-	margin: $gutter 0;
 }
 
 a {
@@ -54,8 +56,8 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0;
-  font-weight: normal;
+	margin-top: 0;
+	font-weight: normal;
 }
 
 .wrapper {
@@ -67,18 +69,18 @@ h6 {
 .container {
 	width: 100%;
 	max-width: 1200px;
-	margin: 0 auto;
 	padding: 0 .9375rem;
+	margin: 0 auto;
 }
 
 .title {
-	font-family: $title;
-	font-weight: 700;
-	font-size: 3rem;
-	color: $dark;
-	line-height: 2.75rem;
-	letter-spacing: .12rem;
 	margin: .9375rem 0;
+	font-family: $title;
+	font-size: 3rem;
+	font-weight: 700;
+	line-height: 2.75rem;
+	color: $dark;
+	letter-spacing: .12rem;
 
 	&_uppercase {
 		text-transform: uppercase;
