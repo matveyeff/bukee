@@ -1,0 +1,49 @@
+.book-hero {
+	position: relative;
+	flex-basis: 38%;
+	margin-right: 3.125rem;
+
+	&__picture {
+		position: relative;
+	}
+
+	&__picture-text {
+		position: absolute;
+		top: 17%;
+		left: 2%;
+		width: 100%;
+		text-align: center;
+	}
+
+	&__picture-title {
+		font-family: $title;
+		font-size: 2.25rem;
+		font-weight: 700;
+		color: $white;
+		text-transform: uppercase;
+		letter-spacing: .09rem;
+	}
+
+	&__picture-subtitle {
+		font-family: $text;
+		font-size: .875rem;
+		color: $accent;
+		letter-spacing: .04375rem;
+	}
+
+	&__picture-author {
+		position: absolute;
+		bottom: 10%;
+		left: 20%;
+		font-family: $text;
+		font-size: .875rem;
+		color: $accent;
+		letter-spacing: .09rem;
+	}
+
+	&__icon {
+		position: relative;
+		width: 27.9375rem;
+		height: 40.1875rem;
+	}
+}
