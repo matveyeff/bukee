@@ -1,9 +1,10 @@
 .book-contents {
 	display: flex;
 	justify-content: space-between;
+	margin-top: 5rem;
 
 	&__about {
-		flex-basis: 40%;
+		flex-basis: 41%;
 	}
 
 	&__about-desc {

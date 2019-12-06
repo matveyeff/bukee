@@ -1,13 +1,35 @@
 .block-table {
+	margin-bottom: 2.1875rem;
 	color: $gray;
 
 	&__list {
+		counter-reset: list;
 		column-count: 2;
 	}
 
 	&__item {
 		position: relative;
+		padding-left: 2.25rem;
+		margin-bottom: .5rem;
 		line-height: 1.5rem;
-		list-style-position: inside;
+		letter-spacing: .04375rem;
+		list-style-type: none;
+		counter-increment: list;
+
+		&::before {
+			content: counter(list) ". ";
+		}
+
+		&::after {
+			position: absolute;
+			top: 1px;
+			left: 0;
+			padding: 0 .4375rem;
+			font-family: $text;
+			font-size: .9375rem;
+			color: $white;
+			content: "+";
+			background-color: $accent;
+		}
 	}
 }
