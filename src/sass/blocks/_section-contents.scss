@@ -1,0 +1,10 @@
+.section-contents {
+	background-color: #f5f6fa;
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+}

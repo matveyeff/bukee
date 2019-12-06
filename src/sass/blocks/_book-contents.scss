@@ -1,0 +1,25 @@
+.book-contents {
+	display: flex;
+	justify-content: space-between;
+
+	&__about {
+		flex-basis: 40%;
+	}
+
+	&__about-desc {
+		color: gray;
+	}
+
+	&__table {
+		flex-basis: 50%;
+	}
+
+	&__title {
+		margin-bottom: $gutter;
+		font-family: $title;
+		font-size: 1.5rem;
+		font-weight: 700;
+		color: $dark;
+		letter-spacing: .075rem;
+	}
+}

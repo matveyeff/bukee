@@ -1,0 +1,24 @@
+.featured {
+	display: flex;
+	align-items: center;
+
+	&__title {
+		margin-right: 1rem;
+		font-family: $title;
+		font-size: 1.125rem;
+		font-weight: 700;
+		color: $dark;
+		letter-spacing: .05625rem;
+	}
+
+	&__icon {
+		width: 1.125rem;
+		height: 1.125rem;
+		margin-right: $gutter/2;
+		fill: $accent;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}

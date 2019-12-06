@@ -6,8 +6,8 @@ append config
 
 block content
 	section
-		.section.hero
-			.container.hero__container
+		.section.section-hero
+			.container.section-hero__container
 				.book-hero
 					.book-hero__picture
 					.block-text
@@ -22,12 +22,12 @@ block content
 						a.btn(href="#" target="_blank") Buy this book - $15.00
 						small.note * Some conditions may applicable
 	section
-		.section.book-author
-			.container.book-author__container
+		.section.section-author
+			.container.section-author__container
 				.block-author
 					.block-text.block-text_dark
 						span.author.author_dark - Book Author
-						h1.title Emma Anderson
+						h2.title Emma Anderson
 						span.subtitle A room without books is like a body without a soul
 
 						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -54,3 +54,33 @@ block content
 						li.block-counter__item
 							span.block-counter__value 15,000
 							span.block-counter__text Happy readers
+	section
+		.section.section-contents
+			.container.section-contents__container
+				h2.title Book Contents
+				span.subtitle Let’s see what we have covered in the book
+				.book-contents
+					.book-contents__about
+						.book-contents__about-desc
+							h3.book-contents__title About the book
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali qua. Ut enim ad minim veniam, quis nostrud exercitation ull amco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillu m dolore eu fugiat nulla pariatur.
+						.book-contents__about-featured
+							.featured
+								span.featured__title Featured in:
+								+icon('pied-piper-hat', 'featured__icon')
+								+icon('amazon', 'featured__icon')
+								+icon('apple-pay', 'featured__icon')
+					.book-contents__table
+						.book-contents__title Table of contents
+						.block-table
+							ol.block-table__list
+								li.block-table__item Lorem ipsum dolor sit amet
+								li.block-table__item Consectetur adipisicing elit
+								li.block-table__item Labore et dolore magna
+								li.block-table__item Consectetur adipisicing elit
+								li.block-table__item Labore et dolore magna
+								li.block-table__item Lorem ipsum dolor sit amet
+								li.block-table__item Consectetur adipisicing elit
+								li.block-table__item Labore et dolore magna
+								li.block-table__item Consectetur adipisicing elit
+								li.block-table__item Labore et dolore magna
