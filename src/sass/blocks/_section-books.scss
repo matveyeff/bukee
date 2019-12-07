@@ -1,0 +1,9 @@
+.section-books {
+	background-color: $white;
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
