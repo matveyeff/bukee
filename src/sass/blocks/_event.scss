@@ -1,0 +1,22 @@
+.event {
+	letter-spacing: .046875rem;
+
+	&__date {
+		font-family: $text;
+		font-size: .9375rem;
+		line-height: 2.75rem;
+		color: $gray;
+	}
+
+	&__title {
+		font-family: $title;
+		font-size: 1.125rem;
+		font-weight: 700;
+		color: $dark;
+		letter-spacing: .05625rem;
+	}
+
+	&__desc {
+		color: $gray;
+	}
+}

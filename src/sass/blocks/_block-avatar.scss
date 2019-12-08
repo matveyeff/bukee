@@ -1,8 +1,16 @@
 .block-avatar {
 	margin: $gutter*2 $gutter*2 0 0;
 
+	&_left {
+		margin: $gutter*2 0 0 0;
+	}
+
 	&__pic {
 		position: relative;
+	}
+
+	&__img_left {
+		margin-left: 10%;
 	}
 
 	&__pattern {
@@ -11,5 +19,11 @@
 		left: 60%;
 		z-index: -1;
 		transform: translate(-50%, -50%);
+	}
+
+	&__pattern_left {
+		top: -8%;
+		left: 0;
+		transform: none;
 	}
 }
