@@ -1,0 +1,54 @@
+.blog-item {
+	&__img {
+		margin-bottom: 1.25rem;
+		object-fit: fill;
+	}
+
+	&__link {
+		color: $dark;
+		
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	&__title {
+		margin-bottom: .3125rem;
+		font-family: $title;
+		font-size: 1.125rem;
+		font-weight: 700;
+		color: $dark;
+		letter-spacing: .05625rem;
+	}
+
+	&__info {
+		font-family: $text;
+		font-size: 1rem;
+		color: $gray;
+	}
+
+	&__info-link {
+		font-size: .9375rem;
+		color: $accent;
+		letter-spacing: .046875rem;
+
+		&:first-child {
+			margin-left: $gutter/3;
+		}
+
+		&::after {
+			margin: 0 .3125rem;
+			content: '-';
+		}
+
+		&:last-child {
+			&::after {
+				display: none;
+			}
+		}
+	}
+
+	&__text {
+		color: $gray;
+	}
+}
