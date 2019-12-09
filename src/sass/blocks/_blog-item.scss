@@ -31,6 +31,10 @@
 		font-size: .9375rem;
 		color: $accent;
 		letter-spacing: .046875rem;
+
+		&:first-child {
+			margin-left: $gutter/3;
+		}
 	}
 
 	&__text {
