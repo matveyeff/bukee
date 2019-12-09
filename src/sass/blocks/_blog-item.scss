@@ -6,7 +6,7 @@
 
 	&__link {
 		color: $dark;
-		
+
 		&:hover {
 			text-decoration: underline;
 		}
@@ -31,21 +31,6 @@
 		font-size: .9375rem;
 		color: $accent;
 		letter-spacing: .046875rem;
-
-		&:first-child {
-			margin-left: $gutter/3;
-		}
-
-		&::after {
-			margin: 0 .3125rem;
-			content: '-';
-		}
-
-		&:last-child {
-			&::after {
-				display: none;
-			}
-		}
 	}
 
 	&__text {
