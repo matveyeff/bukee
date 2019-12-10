@@ -1,0 +1,30 @@
+.slide {
+	text-align: center;
+
+	&__author {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__pic {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 9.5rem;
+		height: 9.5rem;
+		overflow: hidden;
+		border-radius: 50%;
+	}
+
+	&__img {
+		width: auto;
+		max-width: fit-content;
+		height: 100%;
+	}
+
+	&__text {
+		max-width: 46rem;
+		margin: 0 auto;
+	}
+}
