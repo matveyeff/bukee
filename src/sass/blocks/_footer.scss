@@ -1,0 +1,31 @@
+.footer {
+	padding: 10rem 0;
+	color: $light;
+	background-color: $dark;
+
+	&__col {
+		flex: 1;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+	}
+
+
+
+	&__title {
+		margin-bottom: $gutter;
+		font-family: $title;
+		font-size: 1.125rem;
+		font-weight: 700;
+		line-height: 1.5rem;
+		color: $accent;
+		text-transform: uppercase;
+		letter-spacing: .045rem;
+	}
+
+	&__desc {
+		max-width: 22.625rem;
+	}
+}
