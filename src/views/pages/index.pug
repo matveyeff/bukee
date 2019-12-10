@@ -140,10 +140,10 @@ block content
 					.block-avatar__pic
 						img.block-avatar__img_left(src="img/author-02.jpg", alt="author")
 						svg.block-avatar__pattern.block-avatar__pattern_left(width="435" height="704")
-							linearGradient#gradient(gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="435" y2="704")
+							linearGradient#gradient2(gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="435" y2="704")
 								stop(offset="0" style="stop-color: #446a87")
 								stop(offset="1" style="stop-color: #59c2ae")
-							rect(width="435" height="704" x="0" y="0" fill="url(#gradient)")
+							rect(width="435" height="704" x="0" y="0" fill="url(#gradient2)")
 				.block-events
 					span.author.author_dark - Emma Anderson
 					h2.title Upcoming Events
@@ -152,14 +152,14 @@ block content
 						ul.events__list
 							li.events__item
 								.event
-									date.event__date November 21, 2018
+									span.event__date November 21, 2018
 									h4.event__title Book signing - San Francisco, CA
 									.event__desc
 										p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspen disse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
 									a.btn(href="#") Register
 							li.events__item
 								.event
-									date.event__date November 21, 2018
+									span.event__date November 21, 2018
 									h4.event__title Book reading - Los Angeles, CA
 									.event__desc
 										p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspen disse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
@@ -179,9 +179,9 @@ block content
 								a.blog-item__link(href="#")
 									h3.blog-item__title Importance of light in photography
 								.blog-item__info By
-									a.blog-item__info-link(href="#" alt="alt") Emma Anderson
+									a.blog-item__info-link(href="#") Emma Anderson
 									span.separator -
-									a.blog-item__info-link(href="#" alt="alt") june 30, 2020
+									a.blog-item__info-link(href="#") june 30, 2020
 								.blog-item__text
 									p Lorem ipsum dolor sit amet, conse ctetur adipi scing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
 						li.block-blog__item
@@ -190,9 +190,9 @@ block content
 								a.blog-item__link(href="#")
 									h3.blog-item__title The tools you need for the perfection
 								.blog-item__info By
-									a.blog-item__info-link(href="#" alt="alt") Emma Anderson
+									a.blog-item__info-link(href="#") Emma Anderson
 									span.separator -
-									a.blog-item__info-link(href="#" alt="alt") june 22, 2020
+									a.blog-item__info-link(href="#") june 22, 2020
 								.blog-item__text
 									p Lorem ipsum dolor sit amet, conse ctetur adipi scing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
 						li.block-blog__item
@@ -201,9 +201,9 @@ block content
 								a.blog-item__link(href="#")
 									h3.blog-item__title Knowing the difference is important
 								.blog-item__info By
-									a.blog-item__info-link(href="#" alt="alt") Emma Anderson
+									a.blog-item__info-link(href="#") Emma Anderson
 									span.separator -
-									a.blog-item__info-link(href="#" alt="alt") june 20, 2020
+									a.blog-item__info-link(href="#") june 20, 2020
 								.blog-item__text
 									p Lorem ipsum dolor sit amet, conse ctetur adipi scing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
 				a.btn(href="#") Read more in the blog
@@ -218,7 +218,7 @@ block content
 						.block-newsletter__desc
 							p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspen disse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
 					.block-newsletter__form
-						input.block-newsletter__input(type="text" placeholder="Enter your email" name="")
+						input.block-newsletter__input(type="text" placeholder="Enter your email" name="input")
 						button.block-newsletter__btn Subscribe
 		<!-- /.section-newsletter -->
 
