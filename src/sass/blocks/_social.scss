@@ -7,7 +7,7 @@
 
 	&__item {
 		display: flex;
-		margin-right: .625rem;
+		margin-right: 1rem;
 
 		&:last-child {
 			margin-right: 0;
@@ -15,8 +15,8 @@
 	}
 
 	&__icon {
-		max-width: .9375rem;
-		max-height: .9375rem;
+		max-width: 1rem;
+		max-height: 1rem;
 		fill: $accent;
 	}
 }
