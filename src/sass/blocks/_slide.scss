@@ -7,6 +7,27 @@
 		align-items: center;
 	}
 
+	&__author-avatar {
+		position: relative;
+		margin-bottom: .9375rem;
+	}
+
+	&__author-name {
+		margin-bottom: .3125rem;
+		font-family: $title;
+		font-size: 1.5rem;
+		font-weight: 700;
+		line-height: 1.75rem;
+		color: $accent;
+		letter-spacing: .075rem;
+	}
+
+	&__author-occupation {
+		font-family: $text;
+		font-size: .9375rem;
+		letter-spacing: .046875rem;
+	}
+
 	&__pic {
 		display: flex;
 		align-items: center;
@@ -17,6 +38,16 @@
 		border-radius: 50%;
 	}
 
+	&__quote {
+		position: absolute;
+		top: 0;
+		right: -1rem;
+		width: 48px;
+		height: 42px;
+		content: '';
+		background: url('./../img/quote-right.svg') no-repeat;
+	}
+
 	&__img {
 		width: auto;
 		max-width: fit-content;
@@ -25,6 +56,9 @@
 
 	&__text {
 		max-width: 46rem;
-		margin: 0 auto;
+		margin: 2.1875rem auto;
+		font-family: $text;
+		font-size: .9375rem;
+		letter-spacing: .046875rem;
 	}
 }
