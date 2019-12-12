@@ -1,0 +1,34 @@
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	padding: 0;
+
+	& > li {
+		margin: 0 5px;
+
+		& > button {
+			width: 8px;
+			height: 8px;
+			padding: 5px;
+			font-size: 0;
+			line-height: 0;
+			text-indent: -9999px;
+			cursor: pointer;
+			background-color: $accent;
+			border: none;
+			border-radius: 100%;
+			transition: width $fast;
+
+			&:focus {
+				outline: none;
+			}
+		}
+	}
+
+	& > li.slick-active {
+		& > button {
+			width: 36px;
+			border-radius: 10px;
+		}
+	}
+}
