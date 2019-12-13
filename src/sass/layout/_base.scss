@@ -98,6 +98,10 @@ h6 {
 	font-weight: 400;
 	color: $accent;
 	letter-spacing: .05625rem;
+
+	@include tablets {
+		font-size: .9375rem;
+	}
 }
 
 .section {

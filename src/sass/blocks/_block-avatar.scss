@@ -1,6 +1,11 @@
 .block-avatar {
 	margin: $gutter*2 $gutter*2 0 0;
 
+	@include tablets {
+		flex-basis: 40%;
+		margin: 5rem $gutter 0 0;
+	}
+
 	&_left {
 		margin: $gutter*2 0 0 0;
 	}
@@ -19,6 +24,11 @@
 		left: 60%;
 		z-index: -1;
 		transform: translate(-50%, -50%);
+
+		@include tablets {
+			width: 20.35714285714286rem;
+			height: 26.42857142857143rem;
+		}
 	}
 
 	&__pattern_left {
