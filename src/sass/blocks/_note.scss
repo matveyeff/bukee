@@ -1,4 +1,8 @@
 .note {
 	display: block;
 	margin: $gutter 0;
+
+	@include tablets {
+		margin: .625rem 0;
+	}
 }

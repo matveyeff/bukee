@@ -3,6 +3,10 @@
 	flex-basis: 38%;
 	margin-right: 3.125rem;
 
+	@include tablets {
+		margin-right: .9375rem;
+	}
+
 	&__picture {
 		position: relative;
 	}
@@ -39,6 +43,10 @@
 		font-size: .875rem;
 		color: $accent;
 		letter-spacing: .09rem;
+
+		@include tablets {
+			bottom: 15%;
+		}
 	}
 
 	&__icon {
