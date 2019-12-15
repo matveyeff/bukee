@@ -7,5 +7,9 @@
 		&:last-child {
 			margin-bottom: 0;
 		}
+
+		@include tablets {
+			margin-bottom: .9375rem;
+		}
 	}
 }

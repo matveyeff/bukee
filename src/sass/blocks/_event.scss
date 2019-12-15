@@ -18,5 +18,11 @@
 
 	&__desc {
 		color: $gray;
+
+		@include tablets {
+			p {
+				margin: .625rem 0;
+			}
+		}
 	}
 }
