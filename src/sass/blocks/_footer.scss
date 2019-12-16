@@ -3,6 +3,10 @@
 	color: $light;
 	background-color: $dark;
 
+	@include tablets {
+		padding: 3.125rem 0;
+	}
+
 	&__col {
 		flex: 1;
 	}
@@ -25,5 +29,9 @@
 
 	&__desc {
 		max-width: 22.625rem;
+
+		@include tablets {
+			max-width: 18.21428571428571rem;
+		}
 	}
 }
