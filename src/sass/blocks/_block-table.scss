@@ -5,6 +5,11 @@
 	&__list {
 		counter-reset: list;
 		column-count: 2;
+
+		&_next {
+			margin-top: $gutter;
+			counter-reset: list 10;
+		}
 	}
 
 	&__item {
