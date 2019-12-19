@@ -7,6 +7,11 @@
 		padding-top: 12.5rem;
 	}
 
+	@include phones {
+		padding-top: 10rem;
+		padding-bottom: 3.076923076923077rem;
+	}
+
 	&__container {
 		display: flex;
 		flex-direction: column;

@@ -1,3 +1,8 @@
 .block-hero {
 	display: flex;
+
+	@include phones {
+		flex-direction: column-reverse;
+		text-align: center;
+	}
 }
