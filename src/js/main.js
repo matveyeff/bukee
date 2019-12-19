@@ -11,3 +11,8 @@ $(document).ready(function(){
 		cssEase: 'ease',
   });
 });
+
+$("#nextContent").click(function(e){
+	$("#nextContentList").fadeIn();
+	$("#nextContent").hide();
+});

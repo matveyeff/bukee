@@ -7,8 +7,20 @@
 		column-count: 2;
 
 		&_next {
+			position: relative;
 			margin-top: $gutter;
 			counter-reset: list 10;
+
+			&::before {
+				position: absolute;
+				top: -.9375rem;
+				display: block;
+				width: 15%;
+				height: 1px;
+				content: '';
+				background-color: $accent;
+				background-image: linear-gradient(to left, rgba(101, 228, 206, .7) 0%, rgba(101, 228, 161, .7) 90%);
+			}
 		}
 	}
 
