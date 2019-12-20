@@ -3,6 +3,11 @@
 	justify-content: space-between;
 	margin-top: 4rem;
 
+	@include phones {
+		flex-direction: column;
+		margin-top: 1.923076923076923rem;
+	}
+
 	&__about {
 		flex-basis: 41%;
 	}
@@ -13,6 +18,11 @@
 
 	&__table {
 		flex-basis: 53%;
+
+		@include phones {
+			flex-basis: 100%;
+			margin-top: 1.923076923076923rem;
+		}
 	}
 
 	&__title {
