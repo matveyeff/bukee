@@ -5,15 +5,27 @@
 		margin-top: 5rem;
 	}
 
+	@include phones {
+		margin-top: 2rem;
+	}
+
 	&__list {
 		display: flex;
 		justify-content: space-around;
+
+		@include phones {
+			flex-direction: column;
+		}
 	}
 
 	&__item {
 		display: flex;
 		flex-direction: column;
 		text-align: center;
+
+		@include phones {
+			margin-bottom: 1.153846153846154rem;
+		}
 	}
 
 	&__value {

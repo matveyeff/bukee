@@ -1,4 +1,9 @@
 .block-author {
 	display: flex;
 	justify-content: space-between;
+
+	@include phones {
+		flex-direction: column;
+		text-align: center;
+	}
 }

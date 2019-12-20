@@ -6,6 +6,10 @@
 		margin: 5rem $gutter 0 0;
 	}
 
+	@include phones {
+		margin: $gutter 0;
+	}
+
 	&_left {
 		margin: $gutter*2 0 0 0;
 	}
