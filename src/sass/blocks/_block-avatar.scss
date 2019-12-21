@@ -8,6 +8,7 @@
 
 	@include phones {
 		margin: $gutter 0;
+		text-align: center;
 	}
 
 	&_left {
@@ -20,6 +21,11 @@
 
 	&__img_left {
 		margin-left: 10%;
+
+		@include phones {
+			max-width: 70%;
+			margin-left: 0;
+		}
 	}
 
 	&__pattern {
@@ -39,5 +45,9 @@
 		top: -8%;
 		left: 0;
 		transform: none;
+
+		@include phones {
+			left: $gutter;
+		}
 	}
 }

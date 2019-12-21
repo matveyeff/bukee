@@ -1,8 +1,13 @@
 .section-events {
+	padding: 3.076923076923077rem;
 	background-color: transparent;
 
 	&__container {
 		display: flex;
 		justify-content: space-between;
+
+		@include phones {
+			flex-direction: column;
+		}
 	}
 }
