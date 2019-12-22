@@ -3,6 +3,10 @@
 	align-items: center;
 	justify-content: space-between;
 
+	@include phones {
+		flex-direction: column;
+	}
+
 	&__text {
 		flex-basis: 48%;
 		color: $dark;
@@ -12,6 +16,10 @@
 		display: flex;
 		flex-basis: 45%;
 		flex-direction: column;
+
+		@include phones {
+			width: 100%;
+		}
 	}
 
 	&__input {
