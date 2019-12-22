@@ -8,6 +8,10 @@
   },
   "author": "Dmitrii Matveev",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matveyeff/bukee.git"
+  },
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
@@ -16,7 +20,6 @@
     "gulp-clean-css": "^4.2.0",
     "gulp-concat": "^2.6.1",
     "gulp-group-css-media-queries": "^1.2.2",
-    "gulp-html-prettify": "0.0.1",
     "gulp-imagemin": "^6.2.0",
     "gulp-plumber": "^1.2.1",
     "gulp-pug": "^4.0.1",

@@ -10,7 +10,6 @@ const autoprefixer 			= require('gulp-autoprefixer');
 const gulpStylelint 		= require('gulp-stylelint');
 
 const pug								=	require('gulp-pug');
-const prettify 					= require('gulp-html-prettify');
 
 const concat 						= require('gulp-concat');
 const uglify 						= require('gulp-uglify');
@@ -53,7 +52,7 @@ function styles() {
 		.pipe(autoprefixer({
 			cascade: false,
 			grid: true,
-			overrideBrowserslist: ['last 2 versions'],
+			overrideBrowserslist: ['last 8 versions'],
 		}))
 		.pipe(cleanCSS())
 		.pipe(rename({ suffix: ".min" }))
@@ -65,7 +64,6 @@ function htmls() {
 	return gulp.src(paths.src + 'views/pages/**/*.pug')
 		.pipe(plumber())
 		.pipe(pug({ pretty: true }))
-		.pipe(prettify({indent_char: ' ', indent_size: 2}))
     .pipe(gulp.dest(paths.build));
 }
 

@@ -1,491 +1,425 @@
 <!DOCTYPE html>
 <html lang="zxx">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="Description">
-  <link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-touch-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="img/icons/apple-touch-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-touch-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-touch-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-touch-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-touch-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon-180x180.png">
-  <title>Bukee</title>
-  <link rel="stylesheet" href="css/main.min.css">
-</head>
-
-<body>
-  <div class="wrapper">
-    <header>
-      <div class="header">
-        <div class="container header__container">
-          <a class="logo" href="#">
-            <svg class="logo__icon">
-              <use xlink:href="./img/sprite.svg#logo"></use>
-            </svg>
-          </a>
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__item"><a class="nav__link" href="#">Home</a>
-              </li>
-              <li class="nav__item"><a class="nav__link" href="#">About</a>
-              </li>
-              <li class="nav__item"><a class="nav__link" href="#">Contentns</a>
-              </li>
-              <li class="nav__item"><a class="nav__link" href="#">Books</a>
-              </li>
-              <li class="nav__item"><a class="nav__link" href="#">Education</a>
-              </li>
-              <li class="nav__item"><a class="nav__link" href="#">Skills</a>
-              </li>
-              <li class="nav__item"><a class="nav__link" href="#">Portfolio</a>
-              </li>
-              <li class="nav__item"><a class="nav__link" href="#">Clients</a>
-              </li>
-              <li class="nav__item"><a class="nav__link" href="#">Contact</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <section>
-      <div class="section section-hero">
-        <div class="container section-hero__container">
-          <div class="block-hero">
-            <div class="book-hero">
-              <div class="book-hero__picture">
-                <svg class="book-hero__icon">
-                  <use xlink:href="./img/sprite.svg#book"></use>
-                </svg>
-              </div>
-              <div class="book-hero__picture-text">
-                <div class="book-hero__picture-title">Good book</div>
-                <div class="book-hero__picture-subtitle">Don’t judge a book by its cover</div>
-              </div><span class="book-hero__picture-author">- By Emma Anderson</span>
-            </div>
-            <div class="block-text"><span class="author">- By Emma Anderson</span>
-              <h1 class="title title_white title_uppercase">Bukee: The Book</h1><span class="subtitle">A room without books is like a body without a soul</span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
-                omnis iste natus error sit voluptatem accusantium doloremque.</p><a class="btn" href="#" target="_blank">Buy this book - $15.00</a><small class="note">* Some conditions may applicable</small>
-            </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Description">
+    <link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/icons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon-180x180.png">
+    <title>Bukee</title>
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="header">
+          <div class="container header__container"><a class="logo" href="#">
+              <svg class="logo__icon">
+                <use xlink:href="./img/sprite.svg#logo"></use>
+              </svg></a>
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">About</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Contentns</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Books</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Education</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Skills</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Portfolio</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Clients</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+              </ul>
+            </nav>
           </div>
         </div>
-      </div>
-      <!-- /.section-hero -->
-    </section>
-    <section>
-      <div class="section section-author">
-        <div class="container section-author__container">
-          <div class="block-author">
-            <div class="block-text block-text_dark"><span class="author author_dark">- Book Author</span>
-              <h2 class="title">Emma Anderson</h2><span class="subtitle">A room without books is like a body without a soul</span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
-                omnis iste natus error sit voluptatem accusantium doloremque.</p><a class="btn" href="#" target="_blank">Read full biography</a>
-            </div>
-            <div class="block-avatar">
-              <div class="block-avatar__pic">
-                <img class="block-avatar__img" src="img/author.jpg" alt="author">
-                <svg class="block-avatar__pattern" width="435" height="560">
-                  <linearGradient id="gradient" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="435" y2="560">
-                    <stop offset="0" style="stop-color: #446a87"></stop>
-                    <stop offset="1" style="stop-color: #59c2ae"></stop>
-                  </linearGradient>
-                  <rect width="435" height="560" x="0" y="0" fill="url(#gradient)"></rect>
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div class="block-counter">
-            <ul class="block-counter__list">
-              <li class="block-counter__item"><span class="block-counter__value">12</span><span class="block-counter__text">Total published books</span>
-              </li>
-              <li class="block-counter__item"><span class="block-counter__value">5</span><span class="block-counter__text">Best selling books</span>
-              </li>
-              <li class="block-counter__item"><span class="block-counter__value">15,000</span><span class="block-counter__text">Happy readers</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- /.section-author -->
-    </section>
-    <section>
-      <div class="section section-contents">
-        <div class="container section-contents__container">
-          <h2 class="title">Book Contents</h2><span class="subtitle">Let’s see what we have covered in the book</span>
-          <div class="book-contents">
-            <div class="book-contents__about">
-              <div class="book-contents__about-desc">
-                <h3 class="book-contents__title">About the book</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali qua. Ut enim ad minim veniam, quis nostrud exercitation ull amco laboris nisi ut aliquip ex ea commodo consequat.
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillu m dolore eu fugiat nulla pariatur.</p>
-              </div>
-              <div class="book-contents__about-featured">
-                <div class="featured"><span class="featured__title">Featured in:</span>
-                  <svg class="featured__icon">
-                    <use xlink:href="./img/sprite.svg#pied-piper-hat"></use>
+      </header>
+      <section>
+        <div class="section section-hero">
+          <div class="container section-hero__container">
+            <div class="block-hero">
+              <div class="book-hero">
+                <div class="book-hero__picture">
+                  <svg class="book-hero__icon">
+                    <use xlink:href="./img/sprite.svg#book"></use>
                   </svg>
-                  <svg class="featured__icon">
-                    <use xlink:href="./img/sprite.svg#amazon"></use>
-                  </svg>
-                  <svg class="featured__icon">
-                    <use xlink:href="./img/sprite.svg#apple-pay"></use>
+                </div>
+                <div class="book-hero__picture-text">
+                  <div class="book-hero__picture-title">Good book</div>
+                  <div class="book-hero__picture-subtitle">Don’t judge a book by its cover</div>
+                </div><span class="book-hero__picture-author">- By Emma Anderson</span>
+              </div>
+              <div class="block-text"><span class="author">- By Emma Anderson</span>
+                <h1 class="title title_white title_uppercase">Bukee: The Book</h1><span class="subtitle">A room without books is like a body without a soul</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p><a class="btn" href="#" target="_blank">Buy this book - $15.00</a><small class="note">* Some conditions may applicable</small>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.section-hero -->
+      </section>
+      <section>
+        <div class="section section-author">
+          <div class="container section-author__container">
+            <div class="block-author">
+              <div class="block-text block-text_dark"><span class="author author_dark">- Book Author</span>
+                <h2 class="title">Emma Anderson</h2><span class="subtitle">A room without books is like a body without a soul</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p><a class="btn" href="#" target="_blank">Read full biography</a>
+              </div>
+              <div class="block-avatar">
+                <div class="block-avatar__pic"><img class="block-avatar__img" src="img/author.jpg" alt="author">
+                  <svg class="block-avatar__pattern" width="435" height="560">
+                    <linearGradient id="gradient" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="435" y2="560">
+                      <stop offset="0" style="stop-color: #446a87"></stop>
+                      <stop offset="1" style="stop-color: #59c2ae"></stop>
+                    </linearGradient>
+                    <rect width="435" height="560" x="0" y="0" fill="url(#gradient)"></rect>
                   </svg>
                 </div>
               </div>
             </div>
-            <div class="book-contents__table">
-              <div class="book-contents__title">Table of contents</div>
-              <div class="block-table">
-                <ol class="block-table__list">
-                  <li class="block-table__item">Lorem ipsum dolor sit amet</li>
-                  <li class="block-table__item">Consectetur adipisicing elit</li>
-                  <li class="block-table__item">Labore et dolore magna</li>
-                  <li class="block-table__item">Consectetur adipisicing elit</li>
-                  <li class="block-table__item">Labore et dolore magna</li>
-                  <li class="block-table__item">Lorem ipsum dolor sit amet</li>
-                  <li class="block-table__item">Consectetur adipisicing elit</li>
-                  <li class="block-table__item">Labore et dolore magna</li>
-                  <li class="block-table__item">Consectetur adipisicing elit</li>
-                  <li class="block-table__item">Labore et dolore magna</li>
-                </ol>
-                <ol class="block-table__list block-table__list_next" id="nextContentList" style="display: none;">
-                  <li class="block-table__item">Lorem ipsum dolor sit amet</li>
-                  <li class="block-table__item">Consectetur adipisicing elit</li>
-                  <li class="block-table__item">Labore et dolore magna</li>
-                  <li class="block-table__item">Consectetur adipisicing elit</li>
-                  <li class="block-table__item">Labore et dolore magna</li>
-                  <li class="block-table__item">Lorem ipsum dolor sit amet</li>
-                  <li class="block-table__item">Consectetur adipisicing elit</li>
-                  <li class="block-table__item">Labore et dolore magna</li>
-                  <li class="block-table__item">Consectetur adipisicing elit</li>
-                  <li class="block-table__item">Labore et dolore magna</li>
-                </ol>
-              </div>
-              <button class="btn" id="nextContent">More</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- /.section-contents -->
-    </section>
-    <section>
-      <div class="section section-books">
-        <div class="container section-books__container">
-          <h2 class="title">Other Books</h2><span class="subtitle">Some books you might be interested in</span>
-          <div class="books">
-            <ul class="books__list">
-              <li class="books__item">
-                <div class="book">
-                  <svg class="book__picture">
-                    <use xlink:href="./img/sprite.svg#book_sm"></use>
-                  </svg>
-                  <div class="book__inner-text">
-                    <h3 class="book__inner-title">Inception</h3><span class="book__inner-subtitle">Books are the best friends</span>
-                  </div><span class="book__inner-author">- By Emma Anderson</span>
-                </div>
-                <div class="book__text">
-                  <h3 class="book__title">Inception</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-                </div><a class="link" href="#">Read More</a>
-              </li>
-              <li class="books__item">
-                <div class="book">
-                  <svg class="book__picture">
-                    <use xlink:href="./img/sprite.svg#book_sm"></use>
-                  </svg>
-                  <div class="book__inner-text">
-                    <h3 class="book__inner-title">Fight Club</h3><span class="book__inner-subtitle">Books are the best friends</span>
-                  </div><span class="book__inner-author">- By Emma Anderson</span>
-                </div>
-                <div class="book__text">
-                  <h3 class="book__title">Fight Club</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-                </div><a class="link" href="#">Read More</a>
-              </li>
-              <li class="books__item">
-                <div class="book">
-                  <svg class="book__picture">
-                    <use xlink:href="./img/sprite.svg#book_sm"></use>
-                  </svg>
-                  <div class="book__inner-text">
-                    <h3 class="book__inner-title">Daredevils</h3><span class="book__inner-subtitle">Books are the best friends</span>
-                  </div><span class="book__inner-author">- By Emma Anderson</span>
-                </div>
-                <div class="book__text">
-                  <h3 class="book__title">Daredevils</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-                </div><a class="link" href="#">Read More</a>
-              </li>
-            </ul>
-          </div><a class="btn" href="#">Browse all books</a>
-        </div>
-      </div>
-      <!-- /.section-books -->
-    </section>
-    <section>
-      <div class="section section-feedback">
-        <div class="container section-feedback__container">
-          <div class="slider">
-            <div class="slide">
-              <div class="slide__author">
-                <div class="slide__author-avatar">
-                  <div class="slide__pic">
-                    <div class="slide__quote"></div>
-                    <img class="slide__img" src="img/feedback-01.jpg" alt="review">
-                  </div>
-                </div>
-                <h3 class="slide__author-name">Kate Dennings</h3><span class="slide__author-occupation">Calligraphy Expert</span>
-              </div>
-              <div class="slide__text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-              </div>
-            </div>
-            <div class="slide">
-              <div class="slide__author">
-                <div class="slide__author-avatar">
-                  <div class="slide__pic">
-                    <div class="slide__quote"></div>
-                    <img class="slide__img" src="img/feedback-02.jpg" alt="review">
-                  </div>
-                </div>
-                <h3 class="slide__author-name">Emily Blunt</h3><span class="slide__author-occupation">Calligraphy Expert</span>
-              </div>
-              <div class="slide__text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-              </div>
-            </div>
-            <div class="slide">
-              <div class="slide__author">
-                <div class="slide__author-avatar">
-                  <div class="slide__pic">
-                    <div class="slide__quote"></div>
-                    <img class="slide__img" src="img/feedback-03.jpg" alt="review">
-                  </div>
-                </div>
-                <h3 class="slide__author-name">Tina Weymouth</h3><span class="slide__author-occupation">Calligraphy Expert</span>
-              </div>
-              <div class="slide__text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="section section-events">
-        <div class="container section-events__container">
-          <div class="block-avatar block-avatar_left">
-            <div class="block-avatar__pic">
-              <img class="block-avatar__img_left" src="img/author-02.jpg" alt="author">
-              <svg class="block-avatar__pattern block-avatar__pattern_left" width="435" height="704">
-                <linearGradient id="gradient2" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="435" y2="704">
-                  <stop offset="0" style="stop-color: #446a87"></stop>
-                  <stop offset="1" style="stop-color: #59c2ae"></stop>
-                </linearGradient>
-                <rect width="435" height="704" x="0" y="0" fill="url(#gradient2)"></rect>
-              </svg>
-            </div>
-          </div>
-          <div class="block-events"><span class="author author_dark">- Emma Anderson</span>
-            <h2 class="title">Upcoming Events</h2><span class="subtitle">Some upcoming events you might be interested in</span>
-            <div class="events">
-              <ul class="events__list">
-                <li class="events__item">
-                  <div class="event"><span class="event__date">November 21, 2018</span>
-                    <h4 class="event__title">Book signing - San Francisco, CA</h4>
-                    <div class="event__desc">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspen disse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                    </div><a class="btn" href="#">Register</a>
-                  </div>
-                </li>
-                <li class="events__item">
-                  <div class="event"><span class="event__date">November 21, 2018</span>
-                    <h4 class="event__title">Book reading - Los Angeles, CA</h4>
-                    <div class="event__desc">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspen disse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                    </div><a class="btn" href="#">Register</a>
-                  </div>
-                </li>
+            <div class="block-counter">
+              <ul class="block-counter__list">
+                <li class="block-counter__item"><span class="block-counter__value">12</span><span class="block-counter__text">Total published books</span></li>
+                <li class="block-counter__item"><span class="block-counter__value">5</span><span class="block-counter__text">Best selling books</span></li>
+                <li class="block-counter__item"><span class="block-counter__value">15,000</span><span class="block-counter__text">Happy readers</span></li>
               </ul>
             </div>
           </div>
+        </div><!-- /.section-author -->
+      </section>
+      <section>
+        <div class="section section-contents">
+          <div class="container section-contents__container">
+            <h2 class="title">Book Contents</h2><span class="subtitle">Let’s see what we have covered in the book</span>
+            <div class="book-contents">
+              <div class="book-contents__about">
+                <div class="book-contents__about-desc">
+                  <h3 class="book-contents__title">About the book</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali qua. Ut enim ad minim veniam, quis nostrud exercitation ull amco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillu m dolore eu fugiat nulla pariatur.</p>
+                </div>
+                <div class="book-contents__about-featured">
+                  <div class="featured"><span class="featured__title">Featured in:</span>
+                    <svg class="featured__icon">
+                      <use xlink:href="./img/sprite.svg#pied-piper-hat"></use>
+                    </svg>
+                    <svg class="featured__icon">
+                      <use xlink:href="./img/sprite.svg#amazon"></use>
+                    </svg>
+                    <svg class="featured__icon">
+                      <use xlink:href="./img/sprite.svg#apple-pay"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="book-contents__table">
+                <div class="book-contents__title">Table of contents</div>
+                <div class="block-table">
+                  <ol class="block-table__list">
+                    <li class="block-table__item">Lorem ipsum dolor sit amet</li>
+                    <li class="block-table__item">Consectetur adipisicing elit</li>
+                    <li class="block-table__item">Labore et dolore magna</li>
+                    <li class="block-table__item">Consectetur adipisicing elit</li>
+                    <li class="block-table__item">Labore et dolore magna</li>
+                    <li class="block-table__item">Lorem ipsum dolor sit amet</li>
+                    <li class="block-table__item">Consectetur adipisicing elit</li>
+                    <li class="block-table__item">Labore et dolore magna</li>
+                    <li class="block-table__item">Consectetur adipisicing elit</li>
+                    <li class="block-table__item">Labore et dolore magna</li>
+                  </ol>
+                  <ol class="block-table__list block-table__list_next" id="nextContentList" style="display: none;">
+                    <li class="block-table__item">Lorem ipsum dolor sit amet</li>
+                    <li class="block-table__item">Consectetur adipisicing elit</li>
+                    <li class="block-table__item">Labore et dolore magna</li>
+                    <li class="block-table__item">Consectetur adipisicing elit</li>
+                    <li class="block-table__item">Labore et dolore magna</li>
+                    <li class="block-table__item">Lorem ipsum dolor sit amet</li>
+                    <li class="block-table__item">Consectetur adipisicing elit</li>
+                    <li class="block-table__item">Labore et dolore magna</li>
+                    <li class="block-table__item">Consectetur adipisicing elit</li>
+                    <li class="block-table__item">Labore et dolore magna</li>
+                  </ol>
+                </div>
+                <button class="btn" id="nextContent">More</button>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.section-contents -->
+      </section>
+      <section>
+        <div class="section section-books">
+          <div class="container section-books__container">
+            <h2 class="title">Other Books</h2><span class="subtitle">Some books you might be interested in</span>
+            <div class="books">
+              <ul class="books__list">
+                <li class="books__item">
+                  <div class="book">
+                    <svg class="book__picture">
+                      <use xlink:href="./img/sprite.svg#book_sm"></use>
+                    </svg>
+                    <div class="book__inner-text">
+                      <h3 class="book__inner-title">Inception</h3><span class="book__inner-subtitle">Books are the best friends</span>
+                    </div><span class="book__inner-author">- By Emma Anderson</span>
+                  </div>
+                  <div class="book__text">
+                    <h3 class="book__title">Inception</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                  </div><a class="link" href="#">Read More</a>
+                </li>
+                <li class="books__item">
+                  <div class="book">
+                    <svg class="book__picture">
+                      <use xlink:href="./img/sprite.svg#book_sm"></use>
+                    </svg>
+                    <div class="book__inner-text">
+                      <h3 class="book__inner-title">Fight Club</h3><span class="book__inner-subtitle">Books are the best friends</span>
+                    </div><span class="book__inner-author">- By Emma Anderson</span>
+                  </div>
+                  <div class="book__text">
+                    <h3 class="book__title">Fight Club</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                  </div><a class="link" href="#">Read More</a>
+                </li>
+                <li class="books__item">
+                  <div class="book">
+                    <svg class="book__picture">
+                      <use xlink:href="./img/sprite.svg#book_sm"></use>
+                    </svg>
+                    <div class="book__inner-text">
+                      <h3 class="book__inner-title">Daredevils</h3><span class="book__inner-subtitle">Books are the best friends</span>
+                    </div><span class="book__inner-author">- By Emma Anderson</span>
+                  </div>
+                  <div class="book__text">
+                    <h3 class="book__title">Daredevils</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                  </div><a class="link" href="#">Read More</a>
+                </li>
+              </ul>
+            </div><a class="btn" href="#">Browse all books</a>
+          </div>
+        </div><!-- /.section-books -->
+      </section>
+      <section>
+        <div class="section section-feedback">
+          <div class="container section-feedback__container">
+            <div class="slider">
+              <div class="slide">
+                <div class="slide__author">
+                  <div class="slide__author-avatar">
+                    <div class="slide__pic">
+                      <div class="slide__quote"></div><img class="slide__img" src="img/feedback-01.jpg" alt="review">
+                    </div>
+                  </div>
+                  <h3 class="slide__author-name">Kate Dennings</h3><span class="slide__author-occupation">Calligraphy Expert</span>
+                </div>
+                <div class="slide__text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide__author">
+                  <div class="slide__author-avatar">
+                    <div class="slide__pic">
+                      <div class="slide__quote"></div><img class="slide__img" src="img/feedback-02.jpg" alt="review">
+                    </div>
+                  </div>
+                  <h3 class="slide__author-name">Emily Blunt</h3><span class="slide__author-occupation">Calligraphy Expert</span>
+                </div>
+                <div class="slide__text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide__author">
+                  <div class="slide__author-avatar">
+                    <div class="slide__pic">
+                      <div class="slide__quote"></div><img class="slide__img" src="img/feedback-03.jpg" alt="review">
+                    </div>
+                  </div>
+                  <h3 class="slide__author-name">Tina Weymouth</h3><span class="slide__author-occupation">Calligraphy Expert</span>
+                </div>
+                <div class="slide__text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <!-- /.section-events -->
-    </section>
-    <section>
-      <div class="section section-blog">
-        <div class="container section-blog__container">
-          <h2 class="title">Latest from Blog</h2><span class="subtitle">Some of the latest posts from my personal blog</span>
-          <div class="block-blog">
-            <ul class="block-blog__list">
-              <li class="block-blog__item">
-                <div class="blog-item">
-                  <img class="blog-item__img" src="img/blog-01.jpg" alt="alt">
-                  <a class="blog-item__link" href="#">
-                    <h3 class="blog-item__title">Importance of light in photography</h3>
-                  </a>
-                  <div class="blog-item__info">By<a class="blog-item__info-link" href="#">Emma Anderson</a><span class="separator">-</span><a class="blog-item__info-link" href="#">june 30, 2020</a>
+      </section>
+      <section>
+        <div class="section section-events">
+          <div class="container section-events__container">
+            <div class="block-avatar block-avatar_left">
+              <div class="block-avatar__pic"><img class="block-avatar__img_left" src="img/author-02.jpg" alt="author">
+                <svg class="block-avatar__pattern block-avatar__pattern_left" width="435" height="704">
+                  <linearGradient id="gradient2" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="435" y2="704">
+                    <stop offset="0" style="stop-color: #446a87"></stop>
+                    <stop offset="1" style="stop-color: #59c2ae"></stop>
+                  </linearGradient>
+                  <rect width="435" height="704" x="0" y="0" fill="url(#gradient2)"></rect>
+                </svg>
+              </div>
+            </div>
+            <div class="block-events"><span class="author author_dark">- Emma Anderson</span>
+              <h2 class="title">Upcoming Events</h2><span class="subtitle">Some upcoming events you might be interested in</span>
+              <div class="events">
+                <ul class="events__list">
+                  <li class="events__item">
+                    <div class="event"><span class="event__date">November 21, 2018</span>
+                      <h4 class="event__title">Book signing - San Francisco, CA</h4>
+                      <div class="event__desc">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspen disse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                      </div><a class="btn" href="#">Register</a>
+                    </div>
+                  </li>
+                  <li class="events__item">
+                    <div class="event"><span class="event__date">November 21, 2018</span>
+                      <h4 class="event__title">Book reading - Los Angeles, CA</h4>
+                      <div class="event__desc">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspen disse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                      </div><a class="btn" href="#">Register</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.section-events -->
+      </section>
+      <section>
+        <div class="section section-blog">
+          <div class="container section-blog__container">
+            <h2 class="title">Latest from Blog</h2><span class="subtitle">Some of the latest posts from my personal blog</span>
+            <div class="block-blog">
+              <ul class="block-blog__list">
+                <li class="block-blog__item">
+                  <div class="blog-item"><img class="blog-item__img" src="img/blog-01.jpg" alt="alt"><a class="blog-item__link" href="#">
+                      <h3 class="blog-item__title">Importance of light in photography</h3></a>
+                    <div class="blog-item__info">By<a class="blog-item__info-link" href="#">Emma Anderson</a><span class="separator">-</span><a class="blog-item__info-link" href="#">june 30, 2020</a></div>
+                    <div class="blog-item__text">
+                      <p>Lorem ipsum dolor sit amet, conse ctetur adipi scing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo</p>
+                    </div>
                   </div>
-                  <div class="blog-item__text">
-                    <p>Lorem ipsum dolor sit amet, conse ctetur adipi scing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo</p>
+                </li>
+                <li class="block-blog__item">
+                  <div class="blog-item"><img class="blog-item__img" src="img/blog-02.jpg" alt="alt"><a class="blog-item__link" href="#">
+                      <h3 class="blog-item__title">The tools you need for the perfection</h3></a>
+                    <div class="blog-item__info">By<a class="blog-item__info-link" href="#">Emma Anderson</a><span class="separator">-</span><a class="blog-item__info-link" href="#">june 22, 2020</a></div>
+                    <div class="blog-item__text">
+                      <p>Lorem ipsum dolor sit amet, conse ctetur adipi scing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="block-blog__item">
+                  <div class="blog-item"><img class="blog-item__img" src="img/blog-03.jpg" alt="alt"><a class="blog-item__link" href="#">
+                      <h3 class="blog-item__title">Knowing the difference is important</h3></a>
+                    <div class="blog-item__info">By<a class="blog-item__info-link" href="#">Emma Anderson</a><span class="separator">-</span><a class="blog-item__info-link" href="#">june 20, 2020</a></div>
+                    <div class="blog-item__text">
+                      <p>Lorem ipsum dolor sit amet, conse ctetur adipi scing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div><a class="btn" href="#">Read more in the blog</a>
+          </div>
+        </div><!-- /.section-blog -->
+      </section>
+      <section>
+        <div class="section section-newsletter">
+          <div class="container section-newsletter__container">
+            <div class="block-newsletter">
+              <div class="block-newsletter__text">
+                <h2 class="title">Join Newsletter</h2>
+                <div class="block-newsletter__desc">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspen disse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                </div>
+              </div>
+              <div class="block-newsletter__form">
+                <input class="block-newsletter__input" type="text" placeholder="Enter your email" name="input">
+                <button class="block-newsletter__btn">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.section-newsletter -->
+      </section>
+      <footer>
+        <div class="footer">
+          <div class="container footer__container">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <div class="footer__col"><a class="logo" href="#">
+                    <svg class="logo__icon">
+                      <use xlink:href="./img/sprite.svg#logo-footer"></use>
+                    </svg></a>
+                  <div class="footer__desc">
+                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><span class="copyright">© 2018 Bukee Private Limited.</span>
                   </div>
                 </div>
               </li>
-              <li class="block-blog__item">
-                <div class="blog-item">
-                  <img class="blog-item__img" src="img/blog-02.jpg" alt="alt">
-                  <a class="blog-item__link" href="#">
-                    <h3 class="blog-item__title">The tools you need for the perfection</h3>
-                  </a>
-                  <div class="blog-item__info">By<a class="blog-item__info-link" href="#">Emma Anderson</a><span class="separator">-</span><a class="blog-item__info-link" href="#">june 22, 2020</a>
-                  </div>
-                  <div class="blog-item__text">
-                    <p>Lorem ipsum dolor sit amet, conse ctetur adipi scing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo</p>
-                  </div>
+              <li class="footer__item">
+                <div class="footer__col">
+                  <h4 class="footer__title">Useful Links</h4>
+                  <nav class="footer-nav">
+                    <ul class="footer-nav__list">
+                      <li class="footer-nav__item"><a class="footer-nav__link" href="#">About Bukee</a></li>
+                      <li class="footer-nav__item"><a class="footer-nav__link" href="#">Explore Our Ecosystem</a></li>
+                      <li class="footer-nav__item"><a class="footer-nav__link" href="#">Monthly Community Meetup</a></li>
+                      <li class="footer-nav__item"><a class="footer-nav__link" href="#">Privacy Policy</a></li>
+                    </ul>
+                  </nav>
                 </div>
               </li>
-              <li class="block-blog__item">
-                <div class="blog-item">
-                  <img class="blog-item__img" src="img/blog-03.jpg" alt="alt">
-                  <a class="blog-item__link" href="#">
-                    <h3 class="blog-item__title">Knowing the difference is important</h3>
-                  </a>
-                  <div class="blog-item__info">By<a class="blog-item__info-link" href="#">Emma Anderson</a><span class="separator">-</span><a class="blog-item__info-link" href="#">june 20, 2020</a>
+              <li class="footer__item">
+                <div class="footer__col">
+                  <h4 class="footer__title">Our Contacts</h4>
+                  <div class="footer-contacts">
+                    <ul class="footer-contacts__link">
+                      <li class="footer-contacts__item">Amphitheatre Parkway, CA, 94043</li>
+                      <li class="footer-contacts__item">Call us on: +4455663322</li>
+                      <li class="footer-contacts__item">Email: support@bukee.com</li>
+                    </ul>
                   </div>
-                  <div class="blog-item__text">
-                    <p>Lorem ipsum dolor sit amet, conse ctetur adipi scing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo</p>
+                  <div class="social">
+                    <ul class="social__list">
+                      <li class="social__item"><a class="social__link" href="#" target="_blank">
+                          <svg class="social__icon">
+                            <use xlink:href="./img/sprite.svg#facebook-f"></use>
+                          </svg></a></li>
+                      <li class="social__item"><a class="social__link" href="#" target="_blank">
+                          <svg class="social__icon">
+                            <use xlink:href="./img/sprite.svg#twitter"></use>
+                          </svg></a></li>
+                      <li class="social__item"><a class="social__link" href="#" target="_blank">
+                          <svg class="social__icon">
+                            <use xlink:href="./img/sprite.svg#twitch"></use>
+                          </svg></a></li>
+                      <li class="social__item"><a class="social__link" href="#" target="_blank">
+                          <svg class="social__icon">
+                            <use xlink:href="./img/sprite.svg#slack-hash"></use>
+                          </svg></a></li>
+                      <li class="social__item"><a class="social__link" href="#" target="_blank">
+                          <svg class="social__icon">
+                            <use xlink:href="./img/sprite.svg#whatsapp"></use>
+                          </svg></a></li>
+                    </ul>
                   </div>
                 </div>
               </li>
             </ul>
-          </div><a class="btn" href="#">Read more in the blog</a>
-        </div>
-      </div>
-      <!-- /.section-blog -->
-    </section>
-    <section>
-      <div class="section section-newsletter">
-        <div class="container section-newsletter__container">
-          <div class="block-newsletter">
-            <div class="block-newsletter__text">
-              <h2 class="title">Join Newsletter</h2>
-              <div class="block-newsletter__desc">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspen disse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-              </div>
-            </div>
-            <div class="block-newsletter__form">
-              <input class="block-newsletter__input" type="text" placeholder="Enter your email" name="input">
-              <button class="block-newsletter__btn">Subscribe</button>
-            </div>
           </div>
-        </div>
-      </div>
-      <!-- /.section-newsletter -->
-    </section>
-    <footer>
-      <div class="footer">
-        <div class="container footer__container">
-          <ul class="footer__list">
-            <li class="footer__item">
-              <div class="footer__col">
-                <a class="logo" href="#">
-                  <svg class="logo__icon">
-                    <use xlink:href="./img/sprite.svg#logo-footer"></use>
-                  </svg>
-                </a>
-                <div class="footer__desc">
-                  <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><span class="copyright">© 2018 Bukee Private Limited.</span>
-                </div>
-              </div>
-            </li>
-            <li class="footer__item">
-              <div class="footer__col">
-                <h4 class="footer__title">Useful Links</h4>
-                <nav class="footer-nav">
-                  <ul class="footer-nav__list">
-                    <li class="footer-nav__item"><a class="footer-nav__link" href="#">About Bukee</a>
-                    </li>
-                    <li class="footer-nav__item"><a class="footer-nav__link" href="#">Explore Our Ecosystem</a>
-                    </li>
-                    <li class="footer-nav__item"><a class="footer-nav__link" href="#">Monthly Community Meetup</a>
-                    </li>
-                    <li class="footer-nav__item"><a class="footer-nav__link" href="#">Privacy Policy</a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </li>
-            <li class="footer__item">
-              <div class="footer__col">
-                <h4 class="footer__title">Our Contacts</h4>
-                <div class="footer-contacts">
-                  <ul class="footer-contacts__link">
-                    <li class="footer-contacts__item">Amphitheatre Parkway, CA, 94043</li>
-                    <li class="footer-contacts__item">Call us on: +4455663322</li>
-                    <li class="footer-contacts__item">Email: support@bukee.com</li>
-                  </ul>
-                </div>
-                <div class="social">
-                  <ul class="social__list">
-                    <li class="social__item">
-                      <a class="social__link" href="#" target="_blank">
-                        <svg class="social__icon">
-                          <use xlink:href="./img/sprite.svg#facebook-f"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a class="social__link" href="#" target="_blank">
-                        <svg class="social__icon">
-                          <use xlink:href="./img/sprite.svg#twitter"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a class="social__link" href="#" target="_blank">
-                        <svg class="social__icon">
-                          <use xlink:href="./img/sprite.svg#twitch"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a class="social__link" href="#" target="_blank">
-                        <svg class="social__icon">
-                          <use xlink:href="./img/sprite.svg#slack-hash"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a class="social__link" href="#" target="_blank">
-                        <svg class="social__icon">
-                          <use xlink:href="./img/sprite.svg#whatsapp"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- /.footer -->
-    </footer>
-  </div>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="js/script.min.js"></script>
-</body>
-
+        </div><!-- /.footer -->
+      </footer>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/script.min.js"></script>
+  </body>
 </html>
