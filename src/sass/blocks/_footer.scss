@@ -46,5 +46,9 @@
 		@include tablets {
 			max-width: 18.21428571428571rem;
 		}
+
+		@include phones {
+			max-width: none;
+		}
 	}
 }

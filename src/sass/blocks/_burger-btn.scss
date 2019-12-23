@@ -1,0 +1,16 @@
+.burger-btn {
+	position: absolute;
+	top: 1.5384615384615388rem;
+	right: 1.923076923076923rem;
+	display: none;
+
+	@include phones {
+		display: flex;
+	}
+
+	&__icon {
+		max-width: 2rem;
+		max-height: 2rem;
+		fill: $white;
+	}
+}

@@ -2,8 +2,25 @@
 	display: flex;
 	align-items: center;
 
+	@include phones {
+		position: fixed;
+		top: 0;
+		left: 0;
+		display: none;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+		background: rgba(#000, .9);
+	}
+
 	&__list {
 		display: flex;
+
+		@include phones {
+			flex-direction: column;
+			text-align: center;
+		}
 	}
 
 	&__item {
@@ -12,6 +29,11 @@
 		&:last-child {
 			margin-right: 0;
 		}
+
+		@include phones {
+			margin-right: 0;
+			margin-bottom: 1rem;
+		}
 	}
 
 	&__link {
@@ -19,5 +41,9 @@
 		font-size: 1rem;
 		color: $white;
 		letter-spacing: .8px;
+
+		@include phones {
+			font-size: 2rem;
+		}
 	}
 }

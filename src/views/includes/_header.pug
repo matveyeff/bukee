@@ -2,7 +2,7 @@ header
 	.header
 		.container.header__container
 			a.logo(href="#"): +icon('logo', 'logo__icon')
-			nav.nav
+			nav.nav#nav
 				ul.nav__list
 					li.nav__item: a.nav__link(href="#") Home
 					li.nav__item: a.nav__link(href="#") About
@@ -13,3 +13,5 @@ header
 					li.nav__item: a.nav__link(href="#") Portfolio
 					li.nav__item: a.nav__link(href="#") Clients
 					li.nav__item: a.nav__link(href="#") Contact
+			a.burger-btn#burgerBtn: +icon('bars', 'burger-btn__icon')
+			a.burger-close#close: +icon('times', 'burger-close__icon')
