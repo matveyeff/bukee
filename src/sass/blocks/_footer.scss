@@ -9,11 +9,24 @@
 
 	&__col {
 		flex: 1;
+
+		@include phones {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-bottom: 3.076923076923077rem;
+		}
 	}
 
 	&__list {
 		display: flex;
 		justify-content: space-between;
+
+		@include phones {
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
 	}
 
 	&__title {
