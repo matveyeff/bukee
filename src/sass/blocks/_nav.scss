@@ -37,10 +37,30 @@
 	}
 
 	&__link {
+		position: relative;
+		padding-bottom: 1rem;
 		font-family: $text;
 		font-size: 1rem;
 		color: $white;
 		letter-spacing: .8px;
+
+		&::after {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			content: '';
+			background-color: $white;
+			opacity: 0;
+			transition: opacity $fast;
+		}
+
+		&:hover {
+			&::after {
+				opacity: .7;
+			}
+		}
 
 		@include phones {
 			font-size: 2rem;
