@@ -9,9 +9,13 @@
 	background-color: #65e47d;
 	border: none;
 	border-radius: 3px;
-	box-shadow: 0 2px 0 rgba(101, 228, 125, 0.5);
+	box-shadow: 0 2px 0 rgba(101, 228, 125, .5);
 
 	&:focus {
 		outline: none;
+	}
+
+	&:hover {
+		background: linear-gradient(to left, rgba(101, 228, 206, .5) 0%, rgba(101, 228, 161, .5) 100%);
 	}
 }
